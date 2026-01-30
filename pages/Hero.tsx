@@ -125,7 +125,7 @@ export default function Hero() {
               </span>
             </div>
 
-            <h1 className="text-[14vw] sm:text-[11vw] md:text-[7vw] lg:text-[11vw] font-black leading-[0.8] md:leading-[0.75] tracking-tight text-white uppercase italic">
+            <h1 className="text-[14vw] sm:text-[11vw] md:text-[7vw] lg:text-[10vw] font-black leading-[0.8] md:leading-[0.75] tracking-tight text-white uppercase italic">
               Marcelin <br />
               Global <br />
               <span className="text-transparent bg-clip-text bg-gradient-to-b from-white via-white to-silver-600">
