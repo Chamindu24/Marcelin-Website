@@ -96,7 +96,7 @@ export default function Services() {
                   <div className="absolute inset-0 bg-gradient-to-tr from-transparent via-white/[0.05] to-transparent -translate-x-full group-hover:translate-x-full transition-transform duration-[1500ms] ease-in-out" />
 
                   {/* Icon Section with "Internal Glow" */}
-                  <div className="relative mb-14">
+                  <div className="relative mb-8 md:mb-10">
                     <div className="w-16 h-16 rounded-[20px] bg-white/[0.02] border border-white/10 flex items-center justify-center text-cyan-400 group-hover:text-white group-hover:border-cyan-500 transition-all duration-700 shadow-[0_0_30px_rgba(34,211,238,0.1)]">
                       <svg className="w-8 h-8" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1}>
                         {item.icon}
@@ -120,7 +120,7 @@ export default function Services() {
                   </div>
 
                   {/* Micro-Interaction Footer */}
-                  <div className="mt-12 flex items-center justify-between">
+                  <div className="mt-8 md:mt-10 flex items-center justify-between">
                     <div className="px-4 py-2 rounded-full bg-white/[0.03] border border-white/5 group-hover:border-cyan-500/30 transition-all">
                       <span className="text-[9px]  text-silver-300 group-hover:text-silver-200 uppercase tracking-widest">{item.category}</span>
                     </div>
