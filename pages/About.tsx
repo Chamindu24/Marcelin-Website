@@ -55,7 +55,7 @@ export default function About() {
 
           <div className="max-w-3xl mx-auto">
             <p className="text-cyan-200 text-[14px]  tracking-[0.3em] uppercase  leading-relaxed ">
-              "own the tech, control the system, scale aggressively—while positioning its products and services for both local leadership and regional expansion."
+              &ldquo;own the tech, control the system, scale aggressively—while positioning its products and services for both local leadership and regional expansion.&rdquo;
             </p>
           </div>
         </div>

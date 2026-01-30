@@ -1,6 +1,14 @@
 import { useState, useEffect } from "react";
 
-const products = [
+interface Product {
+  name: string;
+  price: string;
+  priceUSD: string;
+  available: boolean;
+  images: string[];
+}
+
+const products: Product[] = [
     {
     name: "MGH Gaming Laptop",
     price: "16,000 SCR",
@@ -59,7 +67,7 @@ export default function Products() {
   );
 }
 
-function ProductCard({ product }) {
+function ProductCard({ product }: { product: Product }) {
   const [mainImage, setMainImage] = useState(product.images[0]);
   const [currentIndex, setCurrentIndex] = useState(0);
   const [isAutoPlaying, setIsAutoPlaying] = useState(true);
