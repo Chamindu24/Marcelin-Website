@@ -1,69 +1,67 @@
 export default function Founder() {
   return (
-    <section id="founder" className="py-20 px-4 ">
-      <div className="max-w-6xl mx-auto">
-        <div className="text-center mb-16">
-          <h2 className="text-sm font-bold tracking-widest text-cyan-500 uppercase mb-2">Leadership</h2>
-          <h3 className="text-5xl md:text-6xl font-extrabold text-white mb-4">
-            Meet Our <span className="text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-blue-500">Founder</span>
-          </h3>
-          <div className="h-1 w-20 bg-cyan-500 mx-auto rounded-full"></div>
-        </div>
-
-        <div className="relative group">
-          {/* Background Decoration */}
-          <div className="absolute -inset-1 bg-gradient-to-r from-cyan-500 to-blue-600 rounded-3xl blur opacity-25 group-hover:opacity-40 transition duration-1000"></div>
+    <section id="founder" className="py-20 overflow-hidden">
+      <div className="max-w-7xl mx-auto px-6 lg:px-8">
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-0 items-center">
           
-          <div className="relative bg-gray-900 rounded-3xl overflow-hidden border border-gray-800 shadow-2xl">
-            <div className="flex flex-col lg:flex-row">
+          {/* Left Column: Refined Image Frame */}
+          <div className="lg:col-span-5 relative z-10">
+            <div className="relative group">
+              {/* Subtle background glow for depth */}
+              <div className="absolute -inset-4 bg-gradient-to-tr from-zinc-800/20 to-transparent rounded-3xl blur-2xl transition-opacity group-hover:opacity-50" />
               
-              {/* Image Section */}
-              <div className="lg:w-2/5 relative h-[400px] lg:h-auto overflow-hidden">
+              <div className="relative aspect-[4/5] overflow-hidden rounded-2xl border border-zinc-800 bg-zinc-900">
                 <img 
                   src="/img/founder.jpeg" 
                   alt="Danio Elson Gamayel Marcelin" 
-                  className="absolute inset-0 w-full h-full object-cover object-center transform group-hover:scale-105 transition-transform duration-700"
+                  className="w-full h-full object-cover grayscale-50 hover:grayscale-0 transition-all duration-700 ease-out scale-105"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-gray-900 via-transparent to-transparent lg:bg-gradient-to-r"></div>
               </div>
 
-              {/* Content Section */}
-              <div className="lg:w-3/5 p-8 md:p-14 flex flex-col justify-center">
-                <div className="mb-8">
-                  <h3 className="text-4xl font-bold text-white mb-2 leading-tight">
-                    Danio Elson Gamayel Marcelin
-                  </h3>
-                  <div className="flex items-center gap-3">
-                    <span className="text-xl text-cyan-400 font-medium">Founder & CEO</span>
-                    <span className="h-1.5 w-1.5 rounded-full bg-gray-600"></span>
-                    <span className="text-gray-400">Marcelin Global Holdings (MGH)</span>
-                  </div>
+              {/* Decorative corner element */}
+              <div className="absolute -bottom-6 -right-6 h-32 w-32 border-r-2 border-b-2 border-zinc-700/50 rounded-br-3xl hidden lg:block" />
+            </div>
+          </div>
+
+          {/* Right Column: High-End Typography */}
+          <div className="lg:col-span-7 lg:-ml-12 relative z-20">
+            <div className="bg-zinc-950/80 backdrop-blur-xl border border-zinc-800/50 p-8 lg:p-16 rounded-2xl shadow-2xl">
+              
+              <header className="mb-10">
+                <div className="flex items-center gap-3 mb-6">
+                  <span className="h-px w-8 bg-cyan-500"></span>
+                  <span className="text-[12px] font-bold tracking-[0.3em] uppercase text-cyan-500">
+                    Leadership Profile
+                  </span>
                 </div>
 
-                <div className="space-y-6">
-                  <p className="text-gray-300 text-lg leading-relaxed border-l-4 border-cyan-500 pl-6 italic">
-                    "With a vision to transform the technological landscape of Seychelles and beyond, 
-                    Danio has dedicated his career to building scalable, technology-driven businesses."
-                  </p>
-                  
-                  <p className="text-gray-400 text-lg leading-relaxed">
-                    A Seychelles-born entrepreneur and technology innovator, Danio is the driving force behind 
-                    <span className="text-white font-semibold"> Marcel Robotics</span>. 
-                    His leadership philosophy centers on owning the technology, controlling the system, 
-                    and scaling aggressively while maintaining a strong focus on local leadership and regional expansion.
-                  </p>
-                </div>
+                <h2 className="text-4xl lg:text-6xl font-light tracking-tight ">
+                  <span className="text-zinc-100">Danio Elson</span> 
+                  <span className="block mt-2 font-medium bg-gradient-to-r from-zinc-100 via-zinc-400 to-zinc-500 bg-clip-text text-transparent">
+                    Gamayel Marcelin
+                  </span>
+                </h2>
+                
+                <p className="mt-2 text-zinc-500 font-medium italic">
+                  Founder & Chief Executive Officer
+                </p>
+              </header>
 
-                {/* Optional: Social or Signature Area */}
-                <div className="mt-10 pt-8 border-t border-gray-800 flex items-center justify-between">
-                   <div className="text-sm text-gray-500 tracking-tighter uppercase font-bold">
-                     Innovation • Excellence • Leadership
-                   </div>
+              <div className="space-y-6">
+                <p className="text-xl lg:text-[1.4em] leading-relaxed text-zinc-200 font-light">
+                  Danio Elson Gamayel Marcelin is a Seychelles-born entrepreneur and technology innovator best known as the founder and CEO of <span className="text-white border-b border-zinc-500">Marcelin Global Holdings (MGH)</span> and its technology arm, <span className="text-white border-b border-zinc-700">Marcel Robotics</span>.
+                </p>
+
+                <div className="grid grid-cols-1 gap-6 pt-6 border-t border-zinc-600">
+                  <p className="text-zinc-300/90 leading-relaxed text-lg">
+                    He entered the tech scene as a young founder, launching his first robotics and automation venture in his early twenties with a mission to modernize agriculture and other sectors through intelligent systems and scalable solutions.
+                  </p>
                 </div>
               </div>
 
             </div>
           </div>
+
         </div>
       </div>
     </section>

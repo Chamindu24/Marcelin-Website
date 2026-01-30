@@ -28,7 +28,7 @@ const products = [
 
 export default function Products() {
   return (
-    <section id="products" className="py-24 px-4 bg-[#0a0a0a]">
+    <section id="products" className="py-24 px-4">
       <div className="max-w-7xl mx-auto">
         {/* Header Section */}
         <div className="flex flex-col items-center text-center mb-16">
@@ -49,7 +49,7 @@ export default function Products() {
 
 
         {/* Product Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4px bg-silver-600/20 shadow-2xl">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4px bg-silver-600/20 shadow-2xl rounded-4xl overflow-hidden">
           {products.map((product, index) => (
             <ProductCard key={index} product={product} />
           ))}
@@ -98,7 +98,7 @@ function ProductCard({ product }) {
   };
 
   return (
-    <div className="group bg-[#0a0a0a] flex flex-col h-full transition-all duration-500 hover:z-10 relative border border-silver-500/20 hover:border-cyan-500/60">
+    <div className="group  flex flex-col h-full transition-all duration-500 hover:z-10 relative border border-silver-500/20 hover:border-cyan-500/60">
       
 
 
@@ -165,7 +165,7 @@ function ProductCard({ product }) {
       </div>
 
       {/* Content Panel */}
-      <div className="p-8 flex flex-col flex-grow border-t border-silver-600/10">
+      <div className="p-8 flex flex-col flex-grow border-t bg-[#0d0d0d]/70  border-silver-600/10">
         <div className="mb-6">
           <h3 className="text-3xl font-semibold text-white mb-2 tracking-tighter group-hover:text-cyan-400 transition-colors">
             {product.name}

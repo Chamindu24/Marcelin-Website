@@ -1,16 +1,43 @@
 'use client';
 
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 
 export default function Navbar() {
   const [activeTab, setActiveTab] = useState('Home');
 
   const navLinks = [
     { name: 'Home', href: '#home' },
+    { name: 'About', href: '#about' },
     { name: 'Products', href: '#products' },
     { name: 'Services', href: '#services' },
     { name: 'Founder', href: '#founder' },
   ];
+
+  useEffect(() => {
+    const sectionIds = ['home', 'about', 'products', 'services', 'founder', 'contact'];
+
+    const handleScroll = () => {
+      const scrollPos = window.scrollY + 120;
+      let current = 'Home';
+
+      for (const id of sectionIds) {
+        const el = document.getElementById(id);
+        if (!el) continue;
+        const top = el.offsetTop;
+        if (scrollPos >= top) {
+          const link = navLinks.find((l) => l.href === `#${id}`);
+          if (link) current = link.name;
+          if (id === 'contact') current = 'Contact';
+        }
+      }
+
+      setActiveTab(current);
+    };
+
+    handleScroll();
+    window.addEventListener('scroll', handleScroll, { passive: true });
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
 
   const handleClick = (e: React.MouseEvent<HTMLAnchorElement>, name: string, href: string) => {
     e.preventDefault();

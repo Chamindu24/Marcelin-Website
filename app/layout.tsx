@@ -32,9 +32,9 @@ export default function RootLayout({
         {/* Global Background - Fixed behind all content */}
         <div className="fixed inset-0 pointer-events-none z-0">
           {/* Animated gradient orbs */}
-          <div className="absolute top-[10%] left-[15%] w-[600px] h-[600px] rounded-full bg-cyan-500/30 blur-[120px] animate-pulse-slow" />
+          <div className="absolute top-[50%] left-[15%] w-[600px] h-[900px] rounded-full bg-cyan-600/10 blur-[120px] animate-pulse-slow" />
           <div className="absolute bottom-[20%] right-[10%] w-[700px] h-[700px] rounded-full bg-cyan-600/20 blur-[130px] animate-float" />
-          <div className="absolute top-[40%] right-[25%] w-[400px] h-[400px] rounded-full bg-cyan-400/25 blur-[100px] animate-drift" />
+          <div className="absolute top-[40%] right-[25%] w-[400px] h-[400px] rounded-full bg-cyan-400/35 blur-[100px] animate-drift" />
           
           {/* Base gradient layers */}
           <div
