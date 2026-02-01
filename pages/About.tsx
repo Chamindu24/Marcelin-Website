@@ -27,7 +27,7 @@ export default function About() {
 
 
       <div className="max-w-7xl mx-auto px-6 py-20">
-        <div className="w-full max-w-7xl mx-auto px-6 py-8">
+        <div className="w-full max-w-7xl mx-auto px-4 py-8">
         
         {/* --- HEADER SECTION --- */}
         <div className="text-center mb-16">
@@ -78,83 +78,83 @@ export default function About() {
         </div>
 
         {/* --- ACTION SECTION --- */}
-        <div className="flex flex-col items-center justify-center  border-t border-white/5">
+        <div className="flex flex-col items-center justify-center border-t border-white/5 px-4  md:py-0">
           
           <a 
             href="/Marcelin global holdings inc brochure.pdf" 
             target="_blank"
             rel="noopener noreferrer"
-            className="group relative flex items-center justify-between rounded-full bg-cyan-600 text-white px-10 py-5 min-w-[320px] lg:min-w-[460px] overflow-hidden transition-all duration-500 hover:bg-cyan-500 hover:shadow-[0_0_30px_rgba(8,145,178,0.3)] border border-cyan-400/20"
+            className="group relative flex items-center justify-between rounded-full bg-cyan-600 text-white px-6 py-4 md:px-10 md:py-5 w-full max-w-[340px] md:min-w-[320px] lg:min-w-[460px] overflow-hidden transition-all duration-500 hover:bg-cyan-500 active:bg-cyan-500 hover:shadow-[0_0_30px_rgba(8,145,178,0.3)] active:shadow-[0_0_30px_rgba(8,145,178,0.3)] border border-cyan-400/20 active:scale-[0.98]"
           >
             {/* Sophisticated Overlay Effect */}
-            <div className="absolute inset-0 bg-gradient-to-r from-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+            <div className="absolute inset-0 bg-gradient-to-r from-black/20 to-transparent opacity-0 group-hover:opacity-100 group-active:opacity-100 transition-opacity duration-500"></div>
 
-            <div className="relative flex items-center gap-6">
+            <div className="relative flex items-center gap-3 md:gap-6 flex-1 min-w-0">
               {/* Icon Container with subtle glass effect */}
-              <div className="flex items-center justify-center w-11 h-11 rounded-full bg-white/10 backdrop-blur-md border border-white/20 transition-all duration-500 group-hover:scale-110 group-hover:bg-white/20">
-                <Download size={20} className="group-hover:translate-y-[1px] transition-transform" />
+              <div className="flex-shrink-0 flex items-center justify-center w-9 h-9 md:w-11 md:h-11 rounded-full bg-white/10 backdrop-blur-md border border-white/20 transition-all duration-500 group-hover:scale-110 group-active:scale-110 group-hover:bg-white/20 group-active:bg-white/20">
+                <Download size={18} className="md:w-5 md:h-5 group-hover:translate-y-[1px] group-active:translate-y-[1px] transition-transform" />
               </div>
               
-              <div className="flex flex-col items-start">
-                <span className="font-bold uppercase tracking-[0.15em] text-[14px] leading-none">
+              <div className="flex flex-col items-start min-w-0">
+                <span className="font-bold uppercase tracking-[0.1em] md:tracking-[0.15em] text-[11px] md:text-[14px] leading-tight md:leading-none">
                   Download Company Brochure
                 </span>
-
               </div>
             </div>
 
             {/* Right Side: Dynamic Chevron */}
-            <div className="relative flex items-center">
-              <div className="absolute right-full mr-4 w-0 h-px bg-white/40 group-hover:w-12 transition-all duration-500 ease-out"></div>
+            <div className="relative flex items-center flex-shrink-0 ml-2">
+              <div className="absolute right-full mr-2 md:mr-4 w-0 h-px bg-white/40 group-hover:w-6 md:group-hover:w-12 transition-all duration-500 ease-out"></div>
               <div className="p-1">
-                <ChevronRight size={22} className="group-hover:translate-x-2 transition-transform duration-500" />
+                <ChevronRight size={18} className="md:w-[22px] md:h-[22px] group-hover:translate-x-2 group-active:translate-x-2 transition-transform duration-500" />
               </div>
             </div>
           </a>
-
 
         </div>
         </div>
 
         {/* --- BOTTOM: PROJECTS UNDER DEVELOPMENT --- */}
-<div className="mt-16">
-  {/* Header with a thinner, more elegant divider */}
-  <div className="flex items-end justify-center mb-12">
-    <h3 className="text-2xl font-medium text-white uppercase tracking-[0.2em]">
-      Projects Under Development 
-    </h3>
+        <div className="w-full max-w-7xl mx-auto px-4 ">
+          <div className="mt-16">
+            {/* Header with a thinner, more elegant divider */}
+            <div className="flex items-end justify-center mb-12">
+              <h3 className="text-2xl font-medium text-white uppercase tracking-[0.2em]">
+                Projects Under Development 
+              </h3>
 
-  </div>
+            </div>
 
-  <div className="grid md:grid-cols-3 gap-0 border border-white/10">
-    {projects.map((project, index) => (
-      <div 
-        key={index} 
-        className="group relative p-10 border border-white/20 bg-[#0f1115] transition-all duration-500 ease-out hover:bg-cyan-500 hover:border-cyan-400 hover:-translate-y-1 overflow-hidden"
-      >
-        {/* Animated Accent Background - makes the hover "feel" deeper */}
-        <div className="absolute inset-0 bg-gradient-to-br from-white/5 to-transparent opacity-100 group-hover:opacity-0 transition-opacity" />
-        
-        {/* The "Interest" Detail: A geometric corner accent */}
-        <div className="absolute top-0 right-0 w-16 h-16 bg-white/5 -mr-8 -mt-8 rotate-45 group-hover:bg-black/10 transition-colors" />
+            <div className="grid md:grid-cols-3 gap-0 border border-white/10">
+              {projects.map((project, index) => (
+                <div 
+                  key={index} 
+                  className="group relative p-10 border border-white/20 bg-[#0f1115] transition-all duration-500 ease-out hover:bg-cyan-500 hover:border-cyan-400 hover:-translate-y-1 overflow-hidden"
+                >
+                  {/* Animated Accent Background - makes the hover "feel" deeper */}
+                  <div className="absolute inset-0 bg-gradient-to-br from-white/5 to-transparent opacity-100 group-hover:opacity-0 transition-opacity" />
+                  
+                  {/* The "Interest" Detail: A geometric corner accent */}
+                  <div className="absolute top-0 right-0 w-16 h-16 bg-white/5 -mr-8 -mt-8 rotate-45 group-hover:bg-black/10 transition-colors" />
 
-        <div className="relative z-10 flex flex-col h-full">
-
-
-          <h4 className="text-2xl font-bold text-white group-hover:text-black transition-colors mb-4 uppercase tracking-tighter leading-[0.9]">
-            {project.title}
-          </h4>
-          
-          <p className="text-silver-300 text-md leading-relaxed mt-2 group-hover:text-black/70 transition-colors font-medium">
-            {project.desc}
-          </p>
+                  <div className="relative z-10 flex flex-col h-full">
 
 
+                    <h4 className="text-2xl font-bold text-white group-hover:text-black transition-colors mb-4 uppercase tracking-tighter leading-[0.9]">
+                      {project.title}
+                    </h4>
+                    
+                    <p className="text-silver-300 text-md leading-relaxed mt-2 group-hover:text-black/70 transition-colors font-medium">
+                      {project.desc}
+                    </p>
+
+
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
         </div>
-      </div>
-    ))}
-  </div>
-</div>
       </div>
 
 

@@ -57,9 +57,9 @@ export default function Navbar() {
             <a 
               href="#home" 
               onClick={(e) => handleClick(e, 'Home', '#home')}
-              className="pl-4 sm:pl-6 text-lg sm:text-xl font-black tracking-tighter text-white hover:opacity-80 transition"
+              className="pl-4 sm:pl-6 hover:opacity-80 transition"
             >
-              MGH<span className="text-cyan-500">.</span>
+              <img src="/mghlogo2.png" alt="MGH Logo" className="h-8 sm:h-10" />
             </a>
           </div>
 

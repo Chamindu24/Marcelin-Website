@@ -1,7 +1,7 @@
 export default function Founder() {
   return (
     <section id="founder" className="py-20 overflow-hidden">
-      <div className="max-w-7xl mx-auto px-6 lg:px-8">
+      <div className="max-w-7xl mx-auto px-10 lg:px-8">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-0 items-center">
           
           {/* Left Column: Refined Image Frame */}
@@ -25,7 +25,7 @@ export default function Founder() {
 
           {/* Right Column: High-End Typography */}
           <div className="lg:col-span-7 lg:-ml-12 relative z-20">
-            <div className="bg-zinc-950/80 backdrop-blur-xl border border-zinc-800/50 p-8 lg:p-16 rounded-2xl shadow-2xl">
+            <div className="bg-zinc-950/80 backdrop-blur-xl border border-zinc-800/50 p-2 lg:p-16 rounded-2xl shadow-2xl">
               
               <header className="mb-10">
                 <div className="flex items-center gap-3 mb-6">
@@ -36,8 +36,8 @@ export default function Founder() {
                 </div>
 
                 <h2 className="text-4xl lg:text-6xl font-light tracking-tight ">
-                  <span className="text-zinc-100">Danio Elson</span> 
-                  <span className="block mt-2 font-medium bg-gradient-to-r from-zinc-100 via-zinc-400 to-zinc-500 bg-clip-text text-transparent">
+                  <span className="font-medium bg-gradient-to-r from-zinc-100 via-zinc-400 to-zinc-300 bg-clip-text text-transparent">Danio Elson</span> 
+                  <span className="block  font-medium bg-gradient-to-r from-zinc-100 via-zinc-400 to-zinc-500 bg-clip-text text-transparent">
                     Gamayel Marcelin
                   </span>
                 </h2>

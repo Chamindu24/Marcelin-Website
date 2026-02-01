@@ -61,7 +61,7 @@ export default function Contact() {
 
       <div className="relative z-10 max-w-6xl mx-auto  px-4 sm:px-0 md:px-0">
         {/* --- HEADER SECTION: 1 ROW, 2 COLUMNS --- */}
-        <div className="grid lg:grid-cols-2 gap-6 sm:gap-8 md:gap-10 items-end pb-6 sm:pb-8 mb-8">
+        <div className="grid lg:grid-cols-2 gap-6 px-4 md:px-0 sm:gap-8 md:gap-10 items-end pb-6 sm:pb-8 mb-8">
           
           {/* Column 1: The Heading */}
           <div className="text-left">

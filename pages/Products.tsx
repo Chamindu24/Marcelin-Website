@@ -36,7 +36,7 @@ const products: Product[] = [
 
 export default function Products() {
   return (
-    <section id="products" className="py-24 px-4">
+    <section id="products" className="md:py-16 md:px-4 px-8 py-16">
       <div className="max-w-7xl mx-auto">
         {/* Header Section */}
         <div className="flex flex-col items-center text-center mb-16">

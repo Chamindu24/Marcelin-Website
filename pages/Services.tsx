@@ -53,7 +53,7 @@ const services = [
 
 export default function Services() {
   return (
-    <section id="services" className=" py-32 px-6 relative overflow-hidden">
+    <section id="services" className=" py-24 px-8 relative overflow-hidden">
       {/* Dynamic Background Glow */}
       <div className="absolute top-0 left-1/2 -translate-x-1/2 w-full h-[600px] bg-cyan-900/20 blur-[120px] rounded-full opacity-40 pointer-events-none" />
 
